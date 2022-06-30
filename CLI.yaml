@@ -1,0 +1,717 @@
+
+tldav@MSI 03/01/2022 17:30 ~/Desktop/rando (master)
+$ ls
+node_modules       public
+package.json       README.md
+package-lock.json  src
+
+tldav@MSI 03/01/2022 17:30 ~/Desktop/rando (master)
+$ npm i eslint --save-dev
+
+up to date, audited 1406 packages in 2s
+
+169 packages are looking for funding
+  run `npm fund` for details
+
+6 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+tldav@MSI 03/01/2022 17:32 ~/Desktop/rando (master)
+$ npm init @eslint/config
+Need to install the following packages:
+  @eslint/create-config
+Ok to proceed? (y) y
+√ How would you like to use ESLint? · style       
+√ What type of modules does your project use? · esm
+√ Which framework does your project use? · react
+√ Does your project use TypeScript? · No / Yes
+√ Where does your code run? · browser
+√ How would you like to define a style for your project? · guide
+√ Which style guide do you want to follow? · airbnb      
+√ What format do you want your config file to be in? · JavaScript
+Checking peerDependencies of eslint-config-airbnb@latest
+The config that you've selected requires the following dependencies:
+
+eslint-plugin-react@^7.28.0 eslint-config-airbnb@latest eslint@^7.32.0 || ^8.2.0 eslint-plugin-import@^2.25.3 eslint-plugin-jsx-a11y@^6.5.1 eslint-plugin-react-hooks@^4.3.0
+√ Would you like to install them now with npm? · No / Yes
+Installing eslint-plugin-react@^7.28.0, eslint-config-airbnb@latest, eslint@^7.32.0 || ^8.2.0, eslint-plugin-import@^2.25.3, eslint-plugin-jsx-a11y@^6.5.1, eslint-plugin-react-hooks@^4.3.0
+
+added 3 packages, and audited 1409 packages in 4s
+
+169 packages are looking for funding
+  run `npm fund` for details
+
+6 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+Successfully created .eslintrc.js file in C:\Users\tldav\Desktop\rando
+
+tldav@MSI 03/01/2022 17:37 ~/Desktop/rando (master)
+$ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
+Failed to compile.
+
+src\App.js
+  Line 1:18:   Replace `'./logo.svg'` with `"./logo.svg"`     prettier/prettier
+  Line 1:18:   Strings must use doublequote                   quotes
+  Line 2:8:    Replace `'./App.css'` with `"./App.css"`       prettier/prettier
+  Line 2:8:    Strings must use doublequote                   quotes
+  Line 6:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 6:5:    JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+  Line 7:7:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 8:9:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 9:9:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 10:16:  'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 12:9:   'React' must be in scope when using JSX        react/react-in-jsx-scope    
+
+src\index.js
+  Line 1:19:   Replace `'react'` with `"react"`                          prettier/prettier
+  Line 1:19:   Strings must use doublequote                              quotes
+  Line 2:22:   Replace `'react-dom'` with `"react-dom"`                  prettier/prettier
+  Line 2:22:   Strings must use doublequote                              quotes
+  Line 3:8:    Replace `'./index.css'` with `"./index.css"`              prettier/prettier
+  Line 3:8:    Strings must use doublequote                              quotes
+  Line 4:17:   Replace `'./App'` with `"./App"`                          prettier/prettier
+  Line 4:17:   Strings must use doublequote                              quotes
+  Line 5:29:   Replace `'./reportWebVitals'` with `"./reportWebVitals"`  prettier/prettier
+  Line 5:29:   Strings must use doublequote                              quotes
+  Line 8:3:    JSX not allowed in files with extension '.js'             react/jsx-filename-extension
+  Line 11:27:  Replace `'root'` with `"root"`                            prettier/prettier
+  Line 11:27:  Strings must use doublequote                              quotes
+
+src\reportWebVitals.js
+  Line 1:25:  Replace `onPerfEntry` with `(onPerfEntry)`  prettier/prettier
+  Line 3:12:  Replace `'web-vitals'` with `"web-vitals"`  prettier/prettier
+  Line 3:12:  Strings must use doublequote                quotes
+
+Search for the keywords to learn more about each error.
+assets by path static/ 1.49 MiB
+  asset static/js/bundle.js 1.48 MiB [emitted] (name: main) 1 related asset
+  asset static/js/node_modules_web-vitals_dist_web-vitals_js.chunk.js 6.92 KiB [emitted] 1 related asset
+  asset static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg 2.57 KiB [emitted] (auxiliary name: main)
+asset index.html 1.67 KiB [emitted]
+asset asset-manifest.json 546 bytes [emitted]
+runtime modules 31.3 KiB 15 modules
+modules by path ./node_modules/ 1.35 MiB 99 modules
+modules by path ./src/ 18.1 KiB
+  modules by path ./src/*.css 8.82 KiB
+    ./src/index.css 2.72 KiB [built] [code generated]
+    ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css 1.37 KiB [built] [code generated]
+    ./src/App.css 2.72 KiB [built] [code generated]
+    ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css 2 KiB [built] [code generated]
+  modules by path ./src/*.js 5.65 KiB
+    ./src/index.js 1.78 KiB [built] [code generated]
+    ./src/App.js 2.49 KiB [built] [code generated]
+    ./src/reportWebVitals.js 1.38 KiB [built] [code generated]
+  ./src/logo.svg 3.61 KiB [built] [code generated]
+
+ERROR in src\App.js
+  Line 1:18:   Replace `'./logo.svg'` with `"./logo.svg"`     prettier/prettier
+  Line 1:18:   Strings must use doublequote                   quotes
+  Line 2:8:    Replace `'./App.css'` with `"./App.css"`       prettier/prettier
+  Line 2:8:    Strings must use doublequote                   quotes
+  Line 6:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 6:5:    JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+  Line 7:7:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 8:9:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 9:9:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 10:16:  'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 12:9:   'React' must be in scope when using JSX        react/react-in-jsx-scope
+Failed to compile.
+
+src\App.js
+  Line 5:1:    Replace `↹` with `··`                          prettier/prettier
+  Line 6:1:    Replace `↹↹` with `····`                       prettier/prettier
+  Line 6:3:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 6:3:    JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+  Line 7:1:    Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 7:4:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 8:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 8:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 9:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 9:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 10:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 10:11:  'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 11:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:5:   'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 13:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 14:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 15:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 16:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 17:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 18:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 19:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 20:1:   Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 21:1:   Replace `↹↹` with `····`                       prettier/prettier
+  Line 22:1:   Replace `↹` with `··`                          prettier/prettier
+
+src\index.js
+  Line 1:19:   Replace `'react'` with `"react"`                          prettier/prettier
+  Line 1:19:   Strings must use doublequote                              quotes
+  Line 2:22:   Replace `'react-dom'` with `"react-dom"`                  prettier/prettier
+  Line 2:22:   Strings must use doublequote                              quotes
+  Line 3:8:    Replace `'./index.css'` with `"./index.css"`              prettier/prettier
+  Line 3:8:    Strings must use doublequote                              quotes
+  Line 4:17:   Replace `'./App'` with `"./App"`                          prettier/prettier
+  Line 4:17:   Strings must use doublequote                              quotes
+  Line 5:29:   Replace `'./reportWebVitals'` with `"./reportWebVitals"`  prettier/prettier
+  Line 5:29:   Strings must use doublequote                              quotes
+  Line 8:3:    JSX not allowed in files with extension '.js'             react/jsx-filename-extension
+  Line 11:27:  Replace `'root'` with `"root"`                            prettier/prettier
+  Line 11:27:  Strings must use doublequote                              quotes
+
+src\reportWebVitals.js
+  Line 1:25:  Replace `onPerfEntry` with `(onPerfEntry)`  prettier/prettier
+  Line 3:12:  Replace `'web-vitals'` with `"web-vitals"`  prettier/prettier
+  Line 3:12:  Strings must use doublequote                quotes
+
+Search for the keywords to learn more about each error.
+assets by status 9.49 KiB [cached] 2 assets
+assets by status 1.48 MiB [emitted]
+  assets by chunk 1.48 MiB (name: main)
+    asset static/js/bundle.js 1.48 MiB [emitted] (name: main) 1 related asset
+    asset main.284e13cb6d8b9652f2d7.hot-update.js 4.13 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 699 bytes
+    asset asset-manifest.json 671 bytes [emitted]
+    asset main.284e13cb6d8b9652f2d7.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.67 KiB [emitted]
+Entrypoint main 1.48 MiB (1.5 MiB) = static/js/bundle.js 1.48 MiB main.284e13cb6d8b9652f2d7.hot-update.js 4.13 KiB 3 auxiliary assets
+cached modules 1.36 MiB [cached] 106 modules
+runtime modules 31.3 KiB 15 modules
+./src/App.js 2.49 KiB [built] [code generated]
+
+ERROR in src\App.js
+  Line 5:1:    Replace `↹` with `··`                          prettier/prettier
+  Line 6:1:    Replace `↹↹` with `····`                       prettier/prettier
+  Line 6:3:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 6:3:    JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+  Line 7:1:    Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 7:4:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 8:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 8:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 9:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 9:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 10:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 10:11:  'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 11:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:5:   'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 13:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 14:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 15:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 16:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 17:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 18:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 19:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 20:1:   Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 21:1:   Replace `↹↹` with `····`                       prettier/prettier
+  Line 22:1:   Replace `↹` with `··`                          prettier/prettier
+Failed to compile.
+
+src\App.js
+  Line 5:1:    Replace `↹` with `··`                          prettier/prettier
+  Line 6:1:    Replace `↹↹` with `····`                       prettier/prettier
+  Line 6:3:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 6:3:    JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+  Line 7:1:    Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 7:4:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 8:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 8:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 9:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 9:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 10:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 10:11:  'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 11:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:5:   'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 13:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 14:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 15:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 16:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 17:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 18:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 19:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 20:1:   Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 21:1:   Replace `↹↹` with `····`                       prettier/prettier
+  Line 22:1:   Replace `↹` with `··`                          prettier/prettier
+
+src\index.js
+  Line 1:19:   Replace `'react'` with `"react"`                          prettier/prettier
+  Line 1:19:   Strings must use doublequote                              quotes
+  Line 2:22:   Replace `'react-dom'` with `"react-dom"`                  prettier/prettier
+  Line 2:22:   Strings must use doublequote                              quotes
+  Line 3:8:    Replace `'./index.css'` with `"./index.css"`              prettier/prettier
+  Line 3:8:    Strings must use doublequote                              quotes
+  Line 4:17:   Replace `'./App'` with `"./App"`                          prettier/prettier
+  Line 4:17:   Strings must use doublequote                              quotes
+  Line 5:29:   Replace `'./reportWebVitals'` with `"./reportWebVitals"`  prettier/prettier
+  Line 5:29:   Strings must use doublequote                              quotes
+  Line 8:3:    JSX not allowed in files with extension '.js'             react/jsx-filename-extension
+  Line 11:27:  Replace `'root'` with `"root"`                            prettier/prettier
+  Line 11:27:  Strings must use doublequote                              quotes
+
+src\reportWebVitals.js
+  Line 1:25:  Replace `onPerfEntry` with `(onPerfEntry)`  prettier/prettier
+  Line 3:12:  Replace `'web-vitals'` with `"web-vitals"`  prettier/prettier
+  Line 3:12:  Strings must use doublequote                quotes
+
+Search for the keywords to learn more about each error.
+assets by status 1.49 MiB [cached] 3 assets
+assets by path . 2.2 KiB
+  asset index.html 1.67 KiB [emitted]
+  asset asset-manifest.json 546 bytes [emitted]
+cached modules 1.36 MiB (javascript) 31.3 KiB (runtime) [cached] 121 modules
+./src/App.js 2.49 KiB [built]
+
+ERROR in src\App.js
+  Line 5:1:    Replace `↹` with `··`                          prettier/prettier
+  Line 6:1:    Replace `↹↹` with `····`                       prettier/prettier
+  Line 6:3:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 6:3:    JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+  Line 7:1:    Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 7:4:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 8:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 8:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 9:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 9:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 10:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 10:11:  'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 11:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:5:   'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 13:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 14:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 15:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 16:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 17:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 18:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 19:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 20:1:   Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 21:1:   Replace `↹↹` with `····`                       prettier/prettier
+  Line 22:1:   Replace `↹` with `··`                          prettier/prettier
+Failed to compile.
+
+src\App.js
+  Line 5:1:    Replace `↹` with `··`                          prettier/prettier
+  Line 6:1:    Replace `↹↹` with `····`                       prettier/prettier
+  Line 6:3:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 6:3:    JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+  Line 7:1:    Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 7:4:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 8:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 8:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 9:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 9:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 10:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 10:11:  'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 11:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:5:   'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 13:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 14:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 15:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 16:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 17:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 18:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 19:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 20:1:   Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 21:1:   Replace `↹↹` with `····`                       prettier/prettier
+  Line 22:1:   Replace `↹` with `··`                          prettier/prettier
+
+src\index.js
+  Line 1:19:   Replace `'react'` with `"react"`                          prettier/prettier
+  Line 1:19:   Strings must use doublequote                              quotes
+  Line 2:22:   Replace `'react-dom'` with `"react-dom"`                  prettier/prettier
+  Line 2:22:   Strings must use doublequote                              quotes
+  Line 3:8:    Replace `'./index.css'` with `"./index.css"`              prettier/prettier
+  Line 3:8:    Strings must use doublequote                              quotes
+  Line 4:17:   Replace `'./App'` with `"./App"`                          prettier/prettier
+  Line 4:17:   Strings must use doublequote                              quotes
+  Line 5:29:   Replace `'./reportWebVitals'` with `"./reportWebVitals"`  prettier/prettier
+  Line 5:29:   Strings must use doublequote                              quotes
+  Line 8:3:    JSX not allowed in files with extension '.js'             react/jsx-filename-extension
+  Line 11:27:  Replace `'root'` with `"root"`                            prettier/prettier
+  Line 11:27:  Strings must use doublequote                              quotes
+
+src\reportWebVitals.js
+  Line 1:25:  Replace `onPerfEntry` with `(onPerfEntry)`  prettier/prettier
+  Line 3:12:  Replace `'web-vitals'` with `"web-vitals"`  prettier/prettier
+  Line 3:12:  Strings must use doublequote                quotes
+
+Search for the keywords to learn more about each error.
+assets by status 1.49 MiB [cached] 3 assets
+assets by path . 2.2 KiB
+  asset index.html 1.67 KiB [emitted]
+  asset asset-manifest.json 546 bytes [emitted]
+cached modules 1.36 MiB (javascript) 31.3 KiB (runtime) [cached] 121 modules
+./src/App.js 2.49 KiB [built]
+
+ERROR in src\App.js
+  Line 5:1:    Replace `↹` with `··`                          prettier/prettier
+  Line 6:1:    Replace `↹↹` with `····`                       prettier/prettier
+  Line 6:3:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 6:3:    JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+  Line 7:1:    Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 7:4:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 8:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 8:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 9:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 9:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 10:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 10:11:  'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 11:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:5:   'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 13:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 14:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 15:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 16:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 17:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 18:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 19:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 20:1:   Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 21:1:   Replace `↹↹` with `····`                       prettier/prettier
+  Line 22:1:   Replace `↹` with `··`                          prettier/prettier
+Failed to compile.
+
+src\App.js
+  Line 5:1:    Replace `↹` with `··`                          prettier/prettier
+  Line 6:1:    Replace `↹↹` with `····`                       prettier/prettier
+  Line 6:3:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 6:3:    JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+  Line 7:1:    Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 7:4:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 8:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 8:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 9:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 9:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 10:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 10:11:  'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 11:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:5:   'React' must be in scope when using JSX        react/react-in-jsx-scope    
+  Line 13:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 14:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 15:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 16:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 17:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 18:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 19:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 20:1:   Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 21:1:   Replace `↹↹` with `····`                       prettier/prettier
+  Line 22:1:   Replace `↹` with `··`                          prettier/prettier
+
+src\index.js
+  Line 1:19:   Replace `'react'` with `"react"`                          prettier/prettier
+  Line 1:19:   Strings must use doublequote                              quotes
+  Line 2:22:   Replace `'react-dom'` with `"react-dom"`                  prettier/prettier
+  Line 2:22:   Strings must use doublequote                              quotes
+  Line 3:8:    Replace `'./index.css'` with `"./index.css"`              prettier/prettier
+  Line 3:8:    Strings must use doublequote                              quotes
+  Line 4:17:   Replace `'./App'` with `"./App"`                          prettier/prettier
+  Line 4:17:   Strings must use doublequote                              quotes
+  Line 5:29:   Replace `'./reportWebVitals'` with `"./reportWebVitals"`  prettier/prettier
+  Line 5:29:   Strings must use doublequote                              quotes
+  Line 8:3:    JSX not allowed in files with extension '.js'             react/jsx-filename-extension
+  Line 11:27:  Replace `'root'` with `"root"`                            prettier/prettier
+  Line 11:27:  Strings must use doublequote                              quotes
+
+src\reportWebVitals.js
+  Line 1:25:  Replace `onPerfEntry` with `(onPerfEntry)`  prettier/prettier
+  Line 3:12:  Replace `'web-vitals'` with `"web-vitals"`  prettier/prettier
+  Line 3:12:  Strings must use doublequote                quotes
+
+Search for the keywords to learn more about each error.
+assets by status 1.49 MiB [cached] 3 assets
+assets by path . 2.2 KiB
+  asset index.html 1.67 KiB [emitted]
+  asset asset-manifest.json 546 bytes [emitted]
+cached modules 1.36 MiB (javascript) 31.3 KiB (runtime) [cached] 121 modules
+./src/App.js 2.49 KiB [built]
+
+ERROR in src\App.js
+  Line 5:1:    Replace `↹` with `··`                          prettier/prettier
+  Line 6:1:    Replace `↹↹` with `····`                       prettier/prettier
+  Line 6:3:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 6:3:    JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+  Line 7:1:    Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 7:4:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 8:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 8:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 9:1:    Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 9:5:    'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 10:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 10:11:  'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 11:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 12:5:   'React' must be in scope when using JSX        react/react-in-jsx-scope
+  Line 13:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 14:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 15:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 16:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 17:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 18:1:   Replace `↹↹↹↹↹` with `··········`              prettier/prettier
+  Line 19:1:   Replace `↹↹↹↹` with `········`                 prettier/prettier
+  Line 20:1:   Replace `↹↹↹` with `······`                    prettier/prettier
+  Line 21:1:   Replace `↹↹` with `····`                       prettier/prettier
+  Line 22:1:   Replace `↹` with `··`                          prettier/prettier
+
+src\index.js
+  Line 1:19:   Replace `'react'` with `"react"`                          prettier/prettier
+  Line 1:19:   Strings must use doublequote                              quotes
+  Line 2:22:   Replace `'react-dom'` with `"react-dom"`                  prettier/prettier
+  Line 2:22:   Strings must use doublequote                              quotes
+  Line 3:8:    Replace `'./index.css'` with `"./index.css"`              prettier/prettier
+  Line 3:8:    Strings must use doublequote                              quotes
+  Line 4:17:   Replace `'./App'` with `"./App"`                          prettier/prettier
+  Line 4:17:   Strings must use doublequote                              quotes
+  Line 5:29:   Replace `'./reportWebVitals'` with `"./reportWebVitals"`  prettier/prettier
+  Line 5:29:   Strings must use doublequote                              quotes
+  Line 8:3:    JSX not allowed in files with extension '.js'             react/jsx-filename-extension
+Failed to compile.
+
+src\App.js
+  Line 6:3:  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+
+src\index.js
+  Line 1:19:   Replace `'react'` with `"react"`                                                   prettier/prettier
+  Line 1:19:   Strings must use doublequote                                                       quotes
+  Line 2:22:   Replace `'react-dom'` with `"react-dom"`                                           prettier/prettier
+  Line 2:22:   Strings must use doublequote                                                       quotes
+  Line 3:8:    Replace `'./index.css'` with `"./index.css"`                                       prettier/prettier
+  Line 3:8:    Strings must use doublequote                                                       quotes
+  Line 4:17:   Replace `'./App'` with `"./App"`                                                   prettier/prettier
+  Line 4:17:   Strings must use doublequote                                                       quotes
+  Line 5:29:   Replace `'./reportWebVitals'` with `"./reportWebVitals"`                           prettier/prettier
+  Line 5:29:   Strings must use doublequote                                                       quotes
+  Line 8:1:    Replace `··` with `↹`                                                              prettier/prettier
+  Line 8:1:    Expected indentation of 1 tab but found 2 spaces                                   indent
+  Line 8:3:    JSX not allowed in files with extension '.js'                                      react/jsx-filename-extension
+  Line 9:1:    Replace `····` with `↹↹`                                                           prettier/prettier
+  Line 9:1:    Expected indentation of 2 tabs but found 4 spaces                                  indent
+  Line 10:1:   Replace `··` with `↹`                                                              prettier/prettier
+  Line 10:1:   Expected indentation of 1 tab but found 2 spaces                                   indent
+  Line 11:1:   Replace `··document.getElementById('root'` with `↹document.getElementById("root"`  prettier/prettier
+  Line 11:1:   Expected indentation of 1 tab but found 2 spaces                                   indent
+  Line 11:27:  Strings must use doublequote                                                       quotes
+
+src\reportWebVitals.js
+  Line 1:25:  Replace `onPerfEntry` with `(onPerfEntry)`                      prettier/prettier
+  Line 2:1:   Replace `··` with `↹`                                           prettier/prettier
+  Line 2:1:   Expected indentation of 1 tab but found 2 spaces                indent
+  Line 3:1:   Replace `····import('web-vitals'` with `↹↹import("web-vitals"`  prettier/prettier
+  Line 3:1:   Expected indentation of 2 tabs but found 4 spaces               indent
+  Line 3:12:  Strings must use doublequote                                    quotes
+  Line 4:1:   Replace `······` with `↹↹↹`                                     prettier/prettier
+  Line 4:1:   Expected indentation of 3 tabs but found 6 spaces               indent
+  Line 5:1:   Replace `······` with `↹↹↹`                                     prettier/prettier
+  Line 5:1:   Expected indentation of 3 tabs but found 6 spaces               indent
+  Line 6:1:   Replace `······` with `↹↹↹`                                     prettier/prettier
+  Line 6:1:   Expected indentation of 3 tabs but found 6 spaces               indent
+  Line 7:1:   Replace `······` with `↹↹↹`                                     prettier/prettier
+  Line 7:1:   Expected indentation of 3 tabs but found 6 spaces               indent
+  Line 8:1:   Replace `······` with `↹↹↹`                                     prettier/prettier
+  Line 8:1:   Expected indentation of 3 tabs but found 6 spaces               indent
+  Line 9:1:   Replace `····` with `↹↹`                                        prettier/prettier
+  Line 9:1:   Expected indentation of 2 tabs but found 4 spaces               indent
+  Line 10:1:  Replace `··` with `↹`                                           prettier/prettier
+  Line 10:1:  Expected indentation of 1 tab but found 2 spaces                indent
+
+Search for the keywords to learn more about each error.
+assets by path static/ 1.49 MiB
+  asset static/js/bundle.js 1.48 MiB [emitted] (name: main) 1 related asset
+  asset static/js/node_modules_web-vitals_dist_web-vitals_js.chunk.js 6.92 KiB [emitted] 1 related asset
+  asset static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg 2.57 KiB [emitted] (auxiliary name: main)
+asset index.html 1.67 KiB [emitted]
+asset asset-manifest.json 546 bytes [emitted]
+runtime modules 31.3 KiB 15 modules
+modules by path ./node_modules/ 1.35 MiB 99 modules
+modules by path ./src/ 18.1 KiB
+  modules by path ./src/*.css 8.82 KiB
+    ./src/index.css 2.72 KiB [built] [code generated]
+    ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css 1.37 KiB [built] [code generated]
+    ./src/App.css 2.72 KiB [built] [code generated]
+    ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css 2 KiB [built] [code generated]
+  modules by path ./src/*.js 5.65 KiB
+    ./src/index.js 1.78 KiB [built] [code generated]
+    ./src/App.js 2.49 KiB [built] [code generated]
+    ./src/reportWebVitals.js 1.38 KiB [built] [code generated]
+  ./src/logo.svg 3.61 KiB [built] [code generated]
+
+ERROR in src\App.js
+  Line 6:3:  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+
+src\index.js
+  Line 1:19:   Replace `'react'` with `"react"`                                                   prettier/prettier
+  Line 1:19:   Strings must use doublequote                                                       quotes
+  Line 2:22:   Replace `'react-dom'` with `"react-dom"`                                           prettier/prettier
+  Line 2:22:   Strings must use doublequote                                                       quotes
+  Line 3:8:    Replace `'./index.css'` with `"./index.css"`                                       prettier/prettier
+  Line 3:8:    Strings must use doublequote                                                       quotes
+  Line 4:17:   Replace `'./App'` with `"./App"`                                                   prettier/prettier
+  Line 4:17:   Strings must use doublequote                                                       quotes
+  Line 5:29:   Replace `'./reportWebVitals'` with `"./reportWebVitals"`                           prettier/prettier
+  Line 5:29:   Strings must use doublequote                                                       quotes
+  Line 8:1:    Replace `··` with `↹`                                                              prettier/prettier
+  Line 8:1:    Expected indentation of 1 tab but found 2 spaces                                   indent
+  Line 8:3:    JSX not allowed in files with extension '.js'                                      react/jsx-filename-extension
+  Line 9:1:    Replace `····` with `↹↹`                                                           prettier/prettier
+  Line 9:1:    Expected indentation of 2 tabs but found 4 spaces                                  indent
+  Line 10:1:   Replace `··` with `↹`                                                              prettier/prettier
+  Line 10:1:   Expected indentation of 1 tab but found 2 spaces                                   indent
+  Line 11:1:   Replace `··document.getElementById('root'` with `↹document.getElementById("root"`  prettier/prettier
+  Line 11:1:   Expected indentation of 1 tab but found 2 spaces                                   indent
+  Line 11:27:  Strings must use doublequote                                                       quotes
+
+src\reportWebVitals.js
+Failed to compile.
+
+src\App.js
+  Line 6:3:  JSX not allowed in files with extension '.js'  react/jsx-filename-extension       
+
+src\index.js
+  Line 8:2:  JSX not allowed in files with extension '.js'  react/jsx-filename-extension       
+
+src\reportWebVitals.js
+  Line 1:25:  Replace `onPerfEntry` with `(onPerfEntry)`                      prettier/prettier
+  Line 2:1:   Replace `··` with `↹`                                           prettier/prettier
+  Line 2:1:   Expected indentation of 1 tab but found 2 spaces                indent
+  Line 3:1:   Replace `····import('web-vitals'` with `↹↹import("web-vitals"`  prettier/prettier
+  Line 3:1:   Expected indentation of 2 tabs but found 4 spaces               indent
+  Line 3:12:  Strings must use doublequote                                    quotes
+  Line 4:1:   Replace `······` with `↹↹↹`                                     prettier/prettier
+  Line 4:1:   Expected indentation of 3 tabs but found 6 spaces               indent
+  Line 5:1:   Replace `······` with `↹↹↹`                                     prettier/prettier
+  Line 5:1:   Expected indentation of 3 tabs but found 6 spaces               indent
+  Line 6:1:   Replace `······` with `↹↹↹`                                     prettier/prettier
+  Line 6:1:   Expected indentation of 3 tabs but found 6 spaces               indent
+  Line 7:1:   Replace `······` with `↹↹↹`                                     prettier/prettier
+  Line 7:1:   Expected indentation of 3 tabs but found 6 spaces               indent
+  Line 8:1:   Replace `······` with `↹↹↹`                                     prettier/prettier
+  Line 8:1:   Expected indentation of 3 tabs but found 6 spaces               indent
+  Line 9:1:   Replace `····` with `↹↹`                                        prettier/prettier
+  Line 9:1:   Expected indentation of 2 tabs but found 4 spaces               indent
+  Line 10:1:  Replace `··` with `↹`                                           prettier/prettier
+  Line 10:1:  Expected indentation of 1 tab but found 2 spaces                indent
+
+Search for the keywords to learn more about each error.
+assets by status 9.49 KiB [cached] 2 assets
+assets by status 1.48 MiB [emitted]
+  assets by chunk 1.48 MiB (name: main)
+    asset static/js/bundle.js 1.48 MiB [emitted] (name: main) 1 related asset
+    asset main.6aa3da1b8e445fa2796a.hot-update.js 3.4 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+  assets by path *.json 699 bytes
+    asset asset-manifest.json 671 bytes [emitted]
+    asset main.6aa3da1b8e445fa2796a.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+  asset index.html 1.67 KiB [emitted]
+Entrypoint main 1.48 MiB (1.5 MiB) = static/js/bundle.js 1.48 MiB main.6aa3da1b8e445fa2796a.hot-update.js 3.4 KiB 3 auxiliary assets
+cached modules 1.36 MiB [cached] 106 modules
+runtime modules 31.3 KiB 15 modules
+./src/index.js 1.78 KiB [built] [code generated]
+
+ERROR in src\App.js
+  Line 6:3:  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+
+src\index.js
+  Line 8:2:  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+
+src\reportWebVitals.js
+Failed to compile.
+
+src\App.js
+  Line 6:3:  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+
+src\index.js
+  Line 8:2:  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+
+Failed to compile.
+
+src\App.js
+  Line 6:3:  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+
+src\index.js
+  Line 8:2:  JSX not allowed in files with extension '.js'  react/jsx-filename-extension
+
+Search for the keywords to learn more about each error.
+assets by status 1.49 MiB [cached] 3 assets
+assets by path . 2.2 KiB
+  asset index.html 1.67 KiB [emitted]
+  asset asset-manifest.json 546 bytes [emitted]
+cached modules 1.36 MiB (javascript) 31.3 KiB (runtime) [cached] 121 modules
+Compiled successfully!
+
+You can now view rando in the browser.
+
+  Local:            http://localhost:3000        
+  On Your Network:  http://192.168.1.109:3000    
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+assets by path static/ 1.49 MiB
+  asset static/js/bundle.js 1.48 MiB [emitted] (name: main) 1 related asset
+  asset static/js/node_modules_web-vitals_dist_web-vitals_js.chunk.js 6.92 KiB [emitted] 1 related asset
+  asset static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg 2.57 KiB [emitted] (auxiliary name: main)
+asset index.html 1.67 KiB [emitted]
+asset asset-manifest.json 546 bytes [emitted]
+runtime modules 31.3 KiB 15 modules
+modules by path ./node_modules/ 1.35 MiB 99 modules
+modules by path ./src/ 18.1 KiB
+  modules by path ./src/*.css 8.82 KiB
+    ./src/index.css 2.72 KiB [built] [code generated]
+    ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/index.css 1.37 KiB [built] [code generated]
+    ./src/App.css 2.72 KiB [built] [code generated]
+    ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css 2 KiB [built] [code generated]
+  modules by path ./src/*.js 5.65 KiB
+    ./src/index.js 1.78 KiB [built] [code generated]
+    ./src/App.js 2.49 KiB [built] [code generated]
+    ./src/reportWebVitals.js 1.38 KiB [built] [code generated]
+  ./src/logo.svg 3.61 KiB [built] [code generated]
+webpack 5.69.1 compiled successfully in 7348 ms
+
+tldav@MSI 03/01/2022 18:21 ~/Desktop/rando (master)
+$ ls
+code.js  node_modules  package.json  package-lock.json  public  README.md  src
+
+tldav@MSI 03/01/2022 18:21 ~/Desktop/rando (master)
+$ npx eslint code.js
+
+C:\Users\tldav\Desktop\rando\code.js
+  1:10  error  Identifier 'add_nums' is not in camel case   camelcase
+  1:10  error  'add_nums' is defined but never used         no-unused-vars
+  1:26  error  Delete `␍`                                   prettier/prettier
+  2:15  error  Delete `␍`                                   prettier/prettier
+  3:2   error  Delete `␍`                                   prettier/prettier
+  4:1   error  Delete `␍`                                   prettier/prettier
+  5:7   error  'people' is assigned a value but never used  no-unused-vars
+  5:61  error  Delete `␍`                                   prettier/prettier
+
+✖ 8 problems (8 errors, 0 warnings)
+  5 errors and 0 warnings potentially fixable with the `--fix` option.
+
+
+tldav@MSI 03/01/2022 18:21 ~/Desktop/rando (master)
+$ npx eslint code.js
+
+C:\Users\tldav\Desktop\rando\code.js
+  1:10  error  Identifier 'add_nums' is not in camel case   camelcase
+  1:10  error  'add_nums' is defined but never used         no-unused-vars
+  5:7   error  'people' is assigned a value but never used  no-unused-vars
+
+✖ 3 problems (3 errors, 0 warnings)
+
+
+tldav@MSI 03/01/2022 18:25 ~/Desktop/rando (master)
+$
+
+
+
+
+
